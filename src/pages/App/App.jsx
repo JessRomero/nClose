@@ -7,7 +7,7 @@ import AuthPage from '../AuthPage/AuthPage'
 import ProductsPage from '../ProductsPage/ProductsPage'
 
 export default function App() {
-  const [user, setUser] = useState({})
+  const [user, setUser] = useState(null)
   return (
     <main className="App">
       <NavBar />
