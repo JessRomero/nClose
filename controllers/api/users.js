@@ -1,13 +1,42 @@
+const User = require('../../models/user')
+const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt');
+
 module.exports = {
-    create
-  };
-  
-  function create(req, res) {
-    res.json({
-      user: {
-        name: req.body.name,
-        email: req.body.email
-      }
-    });
+  create,
+  login
+};
+
+
+async function create(req, res) {
+  try {
+    const user = await User.create(req.body);
+    const token = createJWT(user);
+    res.json(token);
+  } catch (err) {
+    res.status(400).json(err);
   }
-  
+}
+
+async function login(req, res) {
+  console.log('working')
+  try {
+    const user = await User.findOne({ email: req.body.email });
+    const isValid = await bcrypt.compare(req.body.password, user.password);
+    if (isValid) {
+      const token = createJWT(user)
+      return res.json(token)
+    }
+    throw new Error
+  } catch (err) {
+    res.status(401).json('Unauthorized');
+  }
+}
+
+function createJWT(user) {
+  return jwt.sign(
+    { user },
+    process.env.SECRET,
+    { expiresIn: '24h' }
+  );
+}
