@@ -1,5 +1,17 @@
+import React from 'react';
+import { checkToken } from '../../utilities/users-service';
+
 export default function ProductsPage() {
-    return (
-        <h1>Products Page</h1>
-    )
+
+  async function handleCheckToken() {
+    const expDate = await checkToken();
+    console.log(expDate);
+  }
+
+  return (
+    <>
+      <h1>ProductsPage</h1>
+      <button onClick={handleCheckToken}>Check When My Login Expires</button>
+    </>
+  );
 }
