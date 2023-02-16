@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom"
 import "./ProductDetailPage.css"
-//import ReviewSection from "../../components/ReviewSection/ReviewSection";
 import Comments from "../../Comments/Comments";
 
-export default function ProductDetailPage({products}) {
+export default function ProductDetailPage({ products }) {
 
   let { productName } = useParams();
 
@@ -12,20 +11,14 @@ export default function ProductDetailPage({products}) {
   return (
     <div className="flex">
       <div className="product-img">
-        <h1>{product.title}</h1>
-        <div>Product Description</div>
-      <img src={`${product.poster_path}`} alt="" className="product-image"/>
+        <h1 className="pd-title">{product.title}</h1>
+        <img src={`${product.poster_path}`} alt="" className="product-image" />
       </div>
+        <div className="description">{product.description}</div>
       <div className="comments">
-      <Comments currentUserId="1" />
+        <Comments currentUserId="1" />
       </div>
     </div>
-    
-    )
-  }
- 
- 
- 
- /*
- <ReviewSection />
- */
+
+  )
+}

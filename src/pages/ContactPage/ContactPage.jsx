@@ -1,11 +1,13 @@
+import "./ContactPage.css"
+
 export default function ContactPage() {
     return (
         <div>
             <h1>Contact Us</h1>
-            <div>
+            <div className="map">
                 <img src="https://i.imgur.com/bBpxoeL.png" alt="" />
             </div>
-            <div className="container">
+            <div className="container-contact">
                 <b>Phone:</b> 310-264-4096
                 <br></br>
                 <b>Email:</b> support@posenclosures.com

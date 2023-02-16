@@ -24,6 +24,7 @@ export default function NavBar({ user, setUser }) {
       <Link to="/contact" className='contact nav-link'>Contact Us</Link>
       <span className='line'>&nbsp; | &nbsp;</span>
       <Link to="" onClick={handleLogOut} className='logout nav-link'>Log Out</Link>
+      <hr />
       </div>
     </nav>
   );

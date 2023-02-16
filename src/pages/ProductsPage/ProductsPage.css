@@ -3,6 +3,7 @@
     grid-template-columns: repeat(3,1fr);
     border-style: double;
     border-radius: 10px;
+    margin-top: 5vmin;
   }
   
   body {
@@ -29,9 +30,8 @@
   }
   
   .title {
-    margin: 1vw;
-    background-color: white;
+    margin: 1vmin;
+    background-color: rgba(112, 128, 144, 0.662);
     border-radius: 4px;
   }
-  
  

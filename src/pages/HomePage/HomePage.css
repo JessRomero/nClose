@@ -1,0 +1,33 @@
+.home-h1 {
+    color: whitesmoke;
+    margin: 10vmin;
+    font-size: 10vmin;
+    text-align: center;
+    margin: 5vmin;
+   padding: 2vmin;
+   border: 3px;
+   border-style: solid;
+}
+
+h2 {
+padding: 3vmin;
+margin-top: 10vmin;
+}
+
+ h3 {
+padding: 3vmin;
+ }
+
+ h4 {
+margin-top: 10vmin;
+font-size: x-large;
+text-decoration: underline;
+ }
+
+ h5 {
+    font-size: medium;
+ }
+
+ p {
+padding: 3vmin;
+ }

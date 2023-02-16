@@ -19,12 +19,12 @@ const Comment = ({
     activeComment &&
     activeComment.id === comment.id &&
     activeComment.type === "replying";
-  const fiveMinutes = 300000;
-  const timePassed = new Date() - new Date(comment.createdAt) > fiveMinutes;
+ // const fiveMinutes = 300000;
+  //const timePassed = new Date() - new Date(comment.createdAt) > fiveMinutes;
   const canDelete =
-    currentUserId === comment.userId && replies.length === 0 && !timePassed;
+    currentUserId === comment.userId && replies.length === 0 //&& !timePassed;
   const canReply = Boolean(currentUserId);
-  const canEdit = currentUserId === comment.userId && !timePassed;
+  const canEdit = currentUserId === comment.userId //&& !timePassed;
   const replyId = parentId ? parentId : comment.id;
   const createdAt = new Date(comment.createdAt).toLocaleDateString();
   return (
@@ -39,7 +39,7 @@ const Comment = ({
         {!isEditing && <div className="comment-text">{comment.body}</div>}
         {isEditing && (
           <CommentForm
-            submitLabel="Update"
+            submitLabel="Submit"
             hasCancelButton
             initialText={comment.body}
             handleSubmit={(text) => updateComment(text, comment.id)}
@@ -77,7 +77,6 @@ const Comment = ({
               onClick={() => deleteComment(comment.id)}
             >
               <b>Delete</b>
-              &nbsp; | &nbsp;
             </div>
           )}
         </div>

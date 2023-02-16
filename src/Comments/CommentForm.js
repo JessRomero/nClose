@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 
 const CommentForm = ({
@@ -22,7 +23,7 @@ const CommentForm = ({
           value={text}
           onChange={(e) => setText(e.target.value)}
         />
-        <button className="comment-form-button" disabled={isTextareaDisabled}>
+        <button className="comment-form-button-2">
           {submitLabel}
         </button>
         {hasCancelButton && (

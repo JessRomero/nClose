@@ -1,47 +1,77 @@
 .flex {
-  color: green;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   }
   
-  h1 {
+  .pd-title {
     text-align: center;
+    margin: 10vmin;
   }
 
 .product-image {
   height: 450px;
-  width: 450px
+  width: 450px;
 }
 
 .comments {
-  background-color: pink;
+  background-color: slategray;
+  color: white;
+  margin: 1vmin;
+  max-width: 100vmin;
 }
 
 .comment-box-button {
-  background-color: yellow;
+  padding: 0%;
+  width: 1vmin;
 }
 
 .comment-form-textarea {
   width: 50vmin;
   height: 10vmin;
-  background-color: red;
+background-color: azure;
 }
 
 .comment-form-button {
-  margin: 5vmin;
-  width: 20vmin;
+  margin: auto;
   height: 5vmin;
-  background-color: blue;
+  width: 15vmin;
+  padding: 1vmin;
+}
+
+.comment-form-button-2 {
+  margin: auto;
+  height: 5vmin;
+  width: 15vmin;
+  padding: 1vmin;
 }
 
 .comment {
+  padding: 2vmin;
   display: flex;
   flex-direction: column;
-  color: purple;
+  align-items: flex-start;
+  text-align: left;
 }
 
 .comment-actions {
   display: flex;
   justify-content: center;
+  padding: 1vmin;
 }
 
+.comments-title {
+  text-align: start;
+  text-decoration: underline;
+  font-size:x-large;
+}
+
+.products-title-h1 {
+  color: black;
+  font-size: 15px;
+  margin: 2px;
+}
+
+.description {
+  margin: 6vmin;
+}

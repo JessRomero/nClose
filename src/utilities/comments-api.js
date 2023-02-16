@@ -43,7 +43,7 @@ export const getComments = async () => {
       body: text,
       parentId,
       userId: "1",
-      username: "Jess",
+      username: <b>Jessica</b>,
       createdAt: new Date().toISOString(),
     };
   };
