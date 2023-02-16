@@ -1,12 +1,7 @@
 .flex {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  .flex div {
-    margin: 0 10%;
-    text-align: left;
+  color: green;
+  display: flex;
+  flex-direction: column;
   }
   
   h1 {
@@ -18,11 +13,35 @@
   width: 450px
 }
 
-.product-image {
-  display: flex;
+.comments {
+  background-color: pink;
 }
 
-.comments {
+.comment-box-button {
+  background-color: yellow;
+}
+
+.comment-form-textarea {
+  width: 50vmin;
+  height: 10vmin;
+  background-color: red;
+}
+
+.comment-form-button {
+  margin: 5vmin;
+  width: 20vmin;
+  height: 5vmin;
+  background-color: blue;
+}
+
+.comment {
   display: flex;
   flex-direction: column;
+  color: purple;
 }
+
+.comment-actions {
+  display: flex;
+  justify-content: center;
+}
+

@@ -1,3 +1,4 @@
+/*
 export const getComments = async () => {
     return [
       {
@@ -34,6 +35,7 @@ export const getComments = async () => {
       },
     ];
   };
+  */
   
   export const createComment = async (text, parentId = null) => {
     return {
