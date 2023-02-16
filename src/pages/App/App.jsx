@@ -3,7 +3,6 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom';
 import { getUser } from '../../utilities/users-service';
 import NavBar from '../../components/NavBar/NavBar';
-import NewOrderPage from '../NewOrderPage/NewOrderPage'
 import AuthPage from '../AuthPage/AuthPage'
 import AboutPage from '../AboutPage/AboutPage';
 import ContactPage from '../ContactPage/ContactPage'
@@ -11,8 +10,6 @@ import HomePage from '../HomePage/HomePage';
 import ProductsPage from '../ProductsPage/ProductsPage';
 import { products } from "../../data.js";
 import ProductDetailPage from '../ProductDetailPage/ProductDetailPage';
-import ReviewSection from '../../components/ReviewSection/ReviewSection';
-
 
 export default function App() {
   const [user, setUser] = useState(getUser())
@@ -24,12 +21,8 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/products" element={<ProductsPage products={products}/>} />
-            <Route
-              path="/products/:productName"
-              element={<ProductDetailPage products={products} />}
-            />
+            <Route path="/products/:productName" element={<ProductDetailPage products={products} />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/orders" element={<NewOrderPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </>
