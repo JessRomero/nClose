@@ -1,33 +1,57 @@
 .home-h1 {
-    color: whitesmoke;
-    margin: 10vmin;
-    font-size: 10vmin;
-    text-align: center;
-    margin: 5vmin;
-   padding: 2vmin;
-   border: 3px;
-   border-style: solid;
+   color: whitesmoke;
+   margin: 10vmin;
+   font-size: 8vmin;
+   text-align: center;
+   margin: 5vmin;
+}
+
+.img-container {
+   float: center;
+   padding-left: 20vmin;
+   width: 10px;
+   height: 10px;
+   opacity: 40%;
+}
+
+.att {
+   padding: 3vmin;
+   color: rgb(0, 34, 225);
+   font-size: 30px;
 }
 
 h2 {
-padding: 3vmin;
-margin-top: 10vmin;
+font-style: italic;
 }
 
- h3 {
-padding: 3vmin;
- }
+h4 {
+   color:rgb(0, 34, 225);
+   text-align: right;
+   margin-top: 18vmin;
+   font-size: 30px;
+   text-decoration: underline;
+   padding-right: 10vmin;
+}
 
- h4 {
-margin-top: 10vmin;
-font-size: x-large;
-text-decoration: underline;
- }
+h5 {
+   padding-top: 7vmin;
+   margin-right: 92vmin;
+   text-align: center;
+   font-size: 21px;
+   line-height: 35px;
+}
 
- h5 {
-    font-size: medium;
- }
+p {
+   padding: 4vmin;
+   font-size: 20px;
+   line-height: 30px;
+   padding-bottom: 5vmin;
+}
 
- p {
-padding: 3vmin;
- }
+.home {
+   background-image: url('https://i.imgur.com/eVTPCiu.png');
+   background-repeat: no-repeat;
+   background-position-x: 20vmin;
+   background-position-y: 28vmin;
+
+}

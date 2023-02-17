@@ -1,42 +1,45 @@
+/*
 .flex {
   color: whitesmoke;
-  display: flex;
+  display:flex;
   flex-direction: column;
   }
-  
   .pd-title {
     text-align: center;
     margin: 10vmin;
   }
+  */
+  .comments {
+    margin-top: 30px;
+    color: white;
+    max-width: 100vmin;
+    float: left;
+  }
+
 
 .product-image {
-  height: 450px;
-  width: 450px;
-}
-
-.comments {
-  background-color: slategray;
-  color: white;
-  margin: 1vmin;
-  max-width: 100vmin;
-}
-
-.comment-box-button {
-  padding: 0%;
-  width: 1vmin;
+  float: right;
+  margin-right: 90px;
+  margin-top: 90px;
+  height: 500px;
+  width: 500px;
 }
 
 .comment-form-textarea {
-  width: 50vmin;
+  margin: 30px;
+  margin-top: 2px;
+  width: 90vmin;
   height: 10vmin;
-background-color: azure;
+  background-color: rgba(240, 255, 255, 0.624);
 }
+
 
 .comment-form-button {
   margin: auto;
   height: 5vmin;
   width: 15vmin;
   padding: 1vmin;
+
 }
 
 .comment-form-button-2 {
@@ -63,7 +66,7 @@ background-color: azure;
 .comments-title {
   text-align: start;
   text-decoration: underline;
-  font-size:x-large;
+  font-size: x-large;
 }
 
 .products-title-h1 {
@@ -73,5 +76,7 @@ background-color: azure;
 }
 
 .description {
-  margin: 6vmin;
+  margin: 10vmin;
+  float: left;
+  font-size: 20px;
 }

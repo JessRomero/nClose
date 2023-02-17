@@ -11,7 +11,7 @@ export default function NavBar({ user, setUser }) {
     <nav>
       <div className='logo-container'>
       <Link to="/">
-        <img src="https://i.imgur.com/uB0e2tH.png" alt=""/>
+        <img src="https://i.imgur.com/ZkNwGZX.png" alt=""/>
       </Link>
       </div>
       <div className='nav-bar'>

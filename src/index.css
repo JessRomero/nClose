@@ -1,6 +1,6 @@
 /* CSS Custom Properties */
 :root {
-  background-color: rgb(69, 78, 86);
+  background-color: rgb(122, 119, 119);
   color: whitesmoke;
 }
 
@@ -73,8 +73,8 @@ code {
 
 .form-container {
   padding: 3vmin;
-  background-color: slategray;
-  border: .1vmin solid black;
+  background-color: rgba(0, 0, 0, 0.613);
+  border: .1vmin solidrgb(0, 34, 225, 0.5);
   border-radius: 1vmin;
 }
 
@@ -99,7 +99,7 @@ input {
   padding: 1vmin;
   font-size: 2vmin;
   border-radius: .5vmin;
-  background-image: none !important; /* prevent lastpass */
+  background-image: none !important;
   outline: none;
 }
 
@@ -139,7 +139,7 @@ button[type="submit"] {
 }
 
 .logo-container {
-  padding: 10px;
+  padding: 2px;
   background-color: rgba(0, 0, 0, 0.613);
   border: .1vmin solid black;
   border-radius: 1vmin;
