@@ -4,7 +4,9 @@
   color: whitesmoke;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
@@ -22,8 +24,7 @@ a {
 }
 
 code {
-  font-family: Verdana
-    monospace;
+  font-family: Verdana monospace;
 }
 
 #root {
@@ -103,7 +104,8 @@ input {
   outline: none;
 }
 
-button, a.button {
+button,
+a.button {
   margin: 1vmin;
   padding: 1vmin;
   color: white;
@@ -128,7 +130,8 @@ button.btn-xs {
   padding: .4vmin .5vmin;
 }
 
-button:disabled, form:invalid button[type="submit"] {
+button:disabled,
+form:invalid button[type="submit"] {
   cursor: not-allowed;
   background-color: black;
 }
@@ -152,7 +155,7 @@ button[type="submit"] {
 
 .nav-link:hover {
   color: blue;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .nav-link:active {
@@ -162,4 +165,3 @@ button[type="submit"] {
 .line {
   font-size: 28px;
 }
-

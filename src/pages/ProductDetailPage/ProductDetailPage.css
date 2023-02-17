@@ -1,20 +1,9 @@
-/*
-.flex {
-  color: whitesmoke;
-  display:flex;
-  flex-direction: column;
-  }
-  .pd-title {
-    text-align: center;
-    margin: 10vmin;
-  }
-  */
-  .comments {
-    margin-top: 30px;
-    color: white;
-    max-width: 100vmin;
-    float: left;
-  }
+.comments {
+  margin-top: 30px;
+  color: white;
+  max-width: 100vmin;
+  float: left;
+}
 
 
 .product-image {

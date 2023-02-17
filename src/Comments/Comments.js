@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import CommentForm from "./CommentForm";
 import Comment from "./Comment";
-//import { getComments as getCommentsApi } from "../utilities/comments-api";
 import { createComment as createCommentApi } from "../utilities/comments-api";
 import { updateComment as updateCommentApi } from "../utilities/comments-api";
 import { deleteComment as deleteCommentApi } from "../utilities/comments-api";
@@ -50,17 +49,10 @@ const Comments = ({ commentsUrl, currentUserId }) => {
     }
   };
 
- /* 
-  useEffect(() => {
-    getCommentsApi().then((data) => {
-      setBackendComments(data);
-    });
-  }, []);
-*/
   return (
     <div className="comments">
       <h3 className="comments-title">Reviews</h3>
-      <CommentForm className="sub"submitLabel="Submit" handleSubmit={addComment} />
+      <CommentForm className="sub" submitLabel="Submit" handleSubmit={addComment} />
       <div className="comments-container">
         {rootComments.map((rootComment) => (
           <Comment

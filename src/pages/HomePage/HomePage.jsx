@@ -4,15 +4,15 @@ export default function HomePage() {
     return (
         <div className='home'>
             <h1 className='home-h1'>nClose Enclosurs</h1>
-                <h2>iPad | Samsung | Microsoft Enclosures</h2>
-            <h3 className='att'>ATTENTION, ALL BUSINESS OWNERS: 
-            <br></br>THESE MPOS PRODUCTS WILL IMPROVE YOUR COMPANIES</h3>
+            <h2>iPad | Samsung | Microsoft Enclosures</h2>
+            <h3 className='att'>ATTENTION, ALL BUSINESS OWNERS:
+                <br></br>THESE MPOS PRODUCTS WILL IMPROVE YOUR COMPANIES</h3>
             <h5>
                 The new waves of technology
-                <br></br>that will revolutionize the way 
-                <br></br>you run and manage your 
+                <br></br>that will revolutionize the way
+                <br></br>you run and manage your
                 <br></br>business and work wonders
-                <br></br>for your staff and 
+                <br></br>for your staff and
                 <br></br>customer satisfaction
             </h5>
             <h4>
@@ -31,11 +31,3 @@ export default function HomePage() {
         </div>
     )
 }
-
-
-/*
-            <div className='img-container'>
-                <img src="https://i.imgur.com/eVTPCiu.png" alt="" />
-            </div>
-
-*/

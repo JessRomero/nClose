@@ -20,7 +20,7 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/products" element={<ProductsPage products={products}/>} />
+            <Route path="/products" element={<ProductsPage products={products} />} />
             <Route path="/products/:productName" element={<ProductDetailPage products={products} />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
